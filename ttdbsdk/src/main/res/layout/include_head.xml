@@ -45,7 +45,7 @@
             android:id="@+id/text_zuixin"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.91"
+            android:layout_weight="1"
             android:gravity="center"
             android:text="最新"
             android:textColor="@color/black"
