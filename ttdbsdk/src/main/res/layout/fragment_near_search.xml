@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+   <com.ttdb.ttdbsdk.flowlayout.FlowLayout
+       android:id="@+id/near_flowlayout"
+       android:layout_margin="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </com.ttdb.ttdbsdk.flowlayout.FlowLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+      <TextView android:id="@+id/clear_recode_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="16dp"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          android:layout_gravity="center"
+          android:padding="5dp"
+          android:textColor="@color/selector_clear"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="30dp"
+          android:gravity="center"
+          android:text="清除历史纪录"/>
+   </RelativeLayout>
+
+
+</LinearLayout>

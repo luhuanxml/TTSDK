@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/fly_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <RelativeLayout android:id="@+id/root_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ttdbhead">
+
+            <RadioGroup
+                android:id="@+id/main_rg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/transparent"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/btn1"
+                    style="@style/BottomRadioButton"
+                    android:text="@string/main_home" />
+
+                <RadioButton
+                    android:id="@+id/btn2"
+                    style="@style/BottomRadioButton"
+                    android:text="@string/main_lowprice" />
+
+                <RadioButton
+                    android:id="@+id/btn3"
+                    style="@style/BottomRadioButton"
+                    android:text="@string/main_classify" />
+
+                <RadioButton
+                    android:id="@+id/btn4"
+                    style="@style/BottomRadioButton"
+                    android:text="@string/main_buy" />
+
+                <RadioButton
+                    android:id="@+id/btn5"
+                    style="@style/BottomRadioButton"
+                    android:text="@string/main_my" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/badge_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/badge_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/badge_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/badge_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1" />
+
+                <View
+                    android:id="@+id/badge_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/end_fly"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="40dp"
+        android:src="@color/transparent"/>
+
+</RelativeLayout>

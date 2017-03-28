@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--主题颜色要修改的时候直接修改这个属性-->
+    <color name="ttdb_head_red">#ffff4444</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ttdbhead">#FFFFFF</color>
+    <color name="now_rob">#E73253</color>
+    <color name="home_textbuy">#B3B3B3</color>
+    <color name="low_text">#979797</color>
+    <color name="time_rl_bg">#3D3D3D</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="page_back">#fff2f2f2</color>
+    <color name="logo_text_color">#ff7f7f7f</color>
+    <color name="login_with_other_plat_text_color">#ff383838</color>
+    <color name="saffron">#F4B63E</color>
+    <color name="eggplant">#663D4E</color>
+    <color name="sienna">#EB6460</color>
+    <color name="search_good">#666</color>
+    <color name="window_bg">#e9e9e9</color>
+    <color name="text_bg">#f4f4f4</color>
+    <color name="red">#ff0000</color>
+    <color name="money_red">#cc3300</color>
+    <color name="title_color">#0066cc</color>
+    <color name="text_normal_color">#333</color>
+    <color name="text">#999999</color>
+    <color name="yellow_tab">#FFFFEA</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#6B8E23</color>
+    <color name="c999">#999</color>
+    <color name="c666">#666</color>
+    <color name="cc00">#c00</color>
+    <color name="dark">#222</color>
+    <color name="log_color">#efefef</color>
+    <color name="text_sign_l">#888888</color>
+    <color name="text_sign_d">#000000</color>
+    <color name="background">#f4f4f4</color>
+    <color name="orange">#ffb300</color>
+    <color name="poppress">#4CACE2</color>
+
+    <color name="grey21">#363636</color>
+    <color name="gray">#808080</color>
+    <color name="tgray">#99333333</color>
+    <color name="blue">#0099FF</color>
+    <color name="skyblue">#87CEEB</color>
+
+    <!--bottom navigate item text color -->
+    <color name="color_btm_navi_txt_normal">#ffb1c3e7</color>
+    <color name="color_btm_navi_txt_pressed">@color/white</color>
+    <color name="color_btm_navi_txt_checked">@color/white</color>
+
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="lightgray">#f7f7f7</color>
+
+    <color name="textcolor">#999999</color>
+    <!-- 微信相关  -->
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <!-- 微信相关  -->
+
+    <color name="lotter_background">#fc3a3d</color>
+    <color name="erinie_background">#d3d3d3</color>
+    <color name="main_title">#ffffff</color>
+    <color name="main_line">#49494a</color>
+
+    <color name="main_bottom">#666666</color>
+    <color name="goods_botton">#2CCCDB</color>
+    <color name="main_text">#d93850</color>
+
+    <color name="concern">#ff2743</color>
+
+
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+</resources>

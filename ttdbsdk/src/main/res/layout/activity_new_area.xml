@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/ttdb_head_red">
+
+        <ImageView
+            android:id="@+id/new_area_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新手专区"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.ttdb.ttdbsdk.view.PullToRefreshView
+            android:id="@+id/pull_refresh_loadmore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.ttdb.ttdbsdk.view.GridViewWithHeaderAndFooter
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.ttdb.ttdbsdk.view.GridViewWithHeaderAndFooter>
+        </com.ttdb.ttdbsdk.view.PullToRefreshView>
+        <include
+            android:id="@+id/xuanfu"
+            layout="@layout/include_head"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

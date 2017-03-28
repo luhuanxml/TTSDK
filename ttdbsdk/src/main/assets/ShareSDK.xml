@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+    <ShareSDK 
+        AppKey = "7c662114d2b0"/> <!-- 修改成你在sharesdk后台注册的应用的appkey"-->
+    <!--分享 1表示qq空间,2表示微博,3表示qq,4表示微信,5表示微信朋友圈-->
+    <QZone
+        Id="3"
+        SortId="3"
+        AppId="1104628215"
+        AppKey="3XnKI7jdNXZpbvZy"
+        Enable="true"
+        ShareByAppClient="true"
+        RedirectUrl="http://www.ttdb.com" />
+    <SinaWeibo
+        Id="1"
+        SortId="1"
+        AppKey="885172707"
+        AppSecret="0582993385419610f3e85162fc1bbfa0"
+        RedirectUrl="http://www.ttdb.com"
+        ShareByAppClient="true"
+        Enable="true" />
+
+    <QQ
+        Id="7"
+        SortId="7"
+        AppId="1104628215"
+        AppKey="3XnKI7jdNXZpbvZy"
+        ShareByAppClient="true"
+        Enable="true" />
+
+    <!--复制至此  -->
+    <!-- Wechat微信和WechatMoments微信朋友圈的appid是一样的；
+
+                       注意：开发者不能用我们这两个平台的appid,否则分享不了
+
+       	  微信测试的时候，微信测试需要先签名打包出apk,
+		sample测试微信，要先签名打包，keystore在sample项目中，密码123456 -->
+    <Wechat
+        Id="4"
+        SortId="4"
+        AppId="wx73bfc973c231d61e"
+        AppSecret="87572eddc014cec820348da7580b9aa1"
+        Enable="true"
+        BypassApproval="false"/>
+    
+    <WechatMoments
+        Id="5"
+        SortId="5"
+        AppId="wx73bfc973c231d61e"
+        AppSecret="87572eddc014cec820348da7580b9aa1"
+        Enable="true" 
+        BypassApproval="false"/>
+        
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wx73bfc973c231d61e"
+        AppSecret="87572eddc014cec820348da7580b9aa1"
+        Enable="true" />
+
+</DevInfor>

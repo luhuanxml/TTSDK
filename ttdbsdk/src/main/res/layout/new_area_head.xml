@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.ttdb.ttdbsdk.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/include_1"
+            layout="@layout/include_index" />
+
+        <include
+            android:id="@+id/include_2"
+            layout="@layout/include_index" />
+
+        <include
+            android:id="@+id/include_3"
+            layout="@layout/include_index" />
+
+        <include
+            android:id="@+id/include_4"
+            layout="@layout/include_index" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/home_textbuy"
+        android:layout_height="0.3dp"/>
+</LinearLayout>
