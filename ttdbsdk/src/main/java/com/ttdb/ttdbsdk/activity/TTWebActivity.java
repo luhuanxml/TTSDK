@@ -35,7 +35,7 @@ import static com.ttdb.ttdbsdk.utils.Constants.DOMAIN;
 
 public class TTWebActivity extends TTBaseActivity implements PlatformActionListener {
     private static final String TAG = "TTWebActivity";
-    private String url;
+    private String weburl;
     public WebView webview;
     public RelativeLayout relatParent;
     private ImageView ivBack;
@@ -52,7 +52,7 @@ public class TTWebActivity extends TTBaseActivity implements PlatformActionListe
         handler=new Handler();
         TTApplication.getInstance().addActivity(this);
         Bundle b = getIntent().getExtras();
-        url = b.getString("url");
+        weburl = b.getString("url");
         initView();
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,8 +67,8 @@ public class TTWebActivity extends TTBaseActivity implements PlatformActionListe
                 .setTitle(webview, tvTitle)
                 .setScrollBarEnabled(webview, false)
                 .addJavascriptInterface(web, "contact");
-        Log.d(TAG, "onCreate: "+tvTitle.getText().toString()+"  url="+url);
-        webview.loadUrl(url);
+        Log.d(TAG, "onCreate: "+tvTitle.getText().toString()+"  url="+weburl);
+        webview.loadUrl(weburl);
     }
 
     private void initView(){
@@ -120,6 +120,7 @@ public class TTWebActivity extends TTBaseActivity implements PlatformActionListe
                                 @Override
                                 public void run() {
                                     Toast.makeText(TTWebActivity.this, msg, Toast.LENGTH_SHORT).show();
+                                    webview.loadUrl(weburl);
                                 }
                             });
                         } catch (JSONException e) {
