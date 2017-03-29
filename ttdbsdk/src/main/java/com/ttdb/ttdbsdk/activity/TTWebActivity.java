@@ -113,8 +113,6 @@ public class TTWebActivity extends TTBaseActivity implements PlatformActionListe
                 OkGo.get(url, new OkGo.OkCallBack() {
                     @Override
                     public void onSuccess(String s) {
-                        Log.d(TAG, "onSuccess: "+s);
-                        //{"msg":"\u7b7e\u5230\u6210\u529f","status":"1","data":{"exp":"3","jyb":"50","title":"\u4eca\u65e5\u7b7e\u5230"}}
                         try {
                             JSONObject jsonObj=new JSONObject(s);
                             final String msg=jsonObj.getString("msg");
