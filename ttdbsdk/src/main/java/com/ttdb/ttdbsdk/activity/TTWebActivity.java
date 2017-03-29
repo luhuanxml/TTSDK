@@ -138,9 +138,15 @@ public class TTWebActivity extends TTBaseActivity implements PlatformActionListe
 
     }
 
+    //该方法不再UI线程，先切换到UI线程，再去做其他操作，防止线程异常
     @Override
-    public void onError(Platform platform, int i, Throwable throwable) {
-        Log.d(TAG, "onError: ");
+    public void onError(Platform platform, int i, final Throwable throwable) {
+        handler.post(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(TAG, "onError: "+throwable.getMessage());
+            }
+        });
     }
 
     @Override
